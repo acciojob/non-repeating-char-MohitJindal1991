@@ -1,8 +1,7 @@
 function firstNonRepeatedChar(str) {
 	const obj={};
-
 	for(const s of str){
-		obj[s]: (obj[s] || 0)+1;
+		obj[s]=(obj[s] || 0)+1;
 	}
 
 	for(const s of obj){
@@ -10,8 +9,8 @@ function firstNonRepeatedChar(str) {
 			return s;
 		}
 	}
-	return null;
-	
+	return null;	
 }
+
 const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input)); 
