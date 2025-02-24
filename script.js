@@ -4,7 +4,7 @@ function firstNonRepeatedChar(str) {
 		obj[s]=(obj[s] || 0)+1;
 	}
 
-	for(const s of obj){
+	for(const s of str){
 		if(obj[s]===1){
 			return s;
 		}
